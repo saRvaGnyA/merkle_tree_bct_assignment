@@ -67,7 +67,11 @@ public class Main {
         dataBlocks.add("Tx(9, VJTI, Sarvagnya, BC BC AA AB AA)");
         dataBlocks.add("Tx(10, VJTI, Sarvagnya, AA BC BB AB CC)");
 
+        // Printing the tree graphically
         Node root = generateTree(dataBlocks);
         display(root, 0);
+
+        // Printing the Merkle root
+        System.out.println("Merkle Root for the 10 transactions is: " + root.getHash());
     }
 }
